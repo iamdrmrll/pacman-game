@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+body .center {
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5%;
+}
+body .center #score {
+  color: white;
+  outline: 1px solid white;
+  text-align: center;
+  padding: 10px 20px;
+}
+body .center .container {
+  position: relative;
+}
+body .center .container #world .row {
+  height: 40px;
+}
+body .center .container #world .row div {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+body .center .container #world .row .brick {
+  background-color: blue;
+  outline: 1px solid black;
+}
+body .center .container #world .row .coin {
+  background: url("img/coin.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .center .container #world .row .cherry {
+  background: url("img/cherry.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .center .container #world .row .empty {
+  background: "";
+}
+body .center .container #pacman {
+  background: url("img/pacman.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+body .center .container .ghost {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+body .center .container #ghost1 {
+  background: url("img/ghost-1.gif");
+  background-size: cover;
+}
+body .center .container #ghost2 {
+  background: url("img/ghost-3.gif");
+  background-size: cover;
+}
+body .overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
